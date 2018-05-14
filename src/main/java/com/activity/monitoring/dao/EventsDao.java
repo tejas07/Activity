@@ -17,7 +17,4 @@ import java.util.List;
  */
 @Transactional
 public interface EventsDao extends MongoRepository<Event,String>,PagingAndSortingRepository<Event, String> {
-    Page<Event> findOneByEventIdOrderByCreateDateDesc(String eventId, Pageable pageable);
-
-    List<Event> findByEventIdOrderByCreateDateDesc(String eventId);
 }
