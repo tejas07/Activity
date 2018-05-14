@@ -1,6 +1,6 @@
 # Activity
 
-Using Kafka as a messaging pattern we can track inter-related events between application.
+Using Kafka as a messaging service we can track inter-related events between application.
 Create a topic in Kafka as events (*or name as per your convience).
 Send events in below format.
 {
