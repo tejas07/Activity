@@ -1,13 +1,23 @@
 Activity
+========
 
-Core Concept :Monitoring Microservices are used to consume kafka events from any application 
+Pre-requisite:
+--------------
+
+* Kafka 
+* MongoDB
+
+Core Concept
+--------------
+Monitoring Microservices are used to consume kafka events from any application 
 below are the event registry key to produce events.
 
-monitoring.event.add=events
-kafka.group.id=events
-kafka.bootstrap-servers=localhost:9092
+Underlying DB
+-------------
+MongoDB.
 
-DB: MongoDB.
+Operations Brief 
+---------------
+Tracking inter-related activity/events between applications.
 
-Operations Brief : Tracking inter-related activity/events between applications.
 
