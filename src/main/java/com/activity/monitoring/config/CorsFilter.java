@@ -1,4 +1,4 @@
-package com.sboxnw.monitoring.config;
+package com.activity.monitoring.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  * Written by Nilesh Bhosale <nilesh.bhosale@margonetworks.com>, May 2017.

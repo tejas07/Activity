@@ -1,4 +1,4 @@
-package com.sboxnw.monitoring.config;
+package com.activity.monitoring.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.List;
 
 /*
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  * Written by Kunal Utage <kunal.utage@catseyetech.in>, July 2017.

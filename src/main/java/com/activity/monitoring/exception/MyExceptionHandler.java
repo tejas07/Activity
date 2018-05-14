@@ -1,4 +1,4 @@
-package com.sboxnw.monitoring.exception;
+package com.activity.monitoring.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -14,10 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Tejas Gowda <tejas.gowda@sugarboxnetworks.com>, March 2018.
+ * Written by Tejas Gowda <tejas7111991@gmail.com>, March 2018.
  */
 @ControllerAdvice
 public class MyExceptionHandler extends ResponseEntityExceptionHandler {

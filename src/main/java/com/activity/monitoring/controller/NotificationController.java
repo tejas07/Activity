@@ -1,9 +1,9 @@
-package com.sboxnw.monitoring.controller;
+package com.activity.monitoring.controller;
 
-import com.sboxnw.monitoring.dao.EventsDao;
-import com.sboxnw.monitoring.domain.Event;
-import com.sboxnw.monitoring.domain.Notify;
-import com.sboxnw.monitoring.exception.ValidationMsg;
+import com.activity.monitoring.dao.EventsDao;
+import com.activity.monitoring.domain.Event;
+import com.activity.monitoring.domain.Notify;
+import com.activity.monitoring.exception.ValidationMsg;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +20,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Tejas Gowda <tejas.gowda@sugarboxnetworks.com>, March 2018.
+ * Written by Tejas Gowda <tejas7111991@gmail.com>, March 2018.
  */
 @RestController
 public class NotificationController extends BaseController implements NotificationApi {

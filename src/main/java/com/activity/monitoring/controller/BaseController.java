@@ -1,6 +1,6 @@
-package com.sboxnw.monitoring.controller;
+package com.activity.monitoring.controller;
 
-import com.sboxnw.monitoring.exception.ErrorResource;
+import com.activity.monitoring.exception.ErrorResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -11,7 +11,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  * Written by Kunal Utage <kunal.utage@catseyetech.in>, November 2017.

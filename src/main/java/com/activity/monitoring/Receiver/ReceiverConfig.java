@@ -1,6 +1,6 @@
-package com.sboxnw.monitoring.Receiver;
+package com.activity.monitoring.Receiver;
 
-import com.sboxnw.monitoring.Listener.EventListener;
+import com.activity.monitoring.Listener.EventListener;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.slf4j.Logger;
@@ -17,10 +17,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Tejas Gowda <tejas.gowda@sugarboxnetworks.com>, Mar 2017.
+ * Written by Tejas Gowda <tejas7111991@gmail.com>, Mar 2017.
  */
 @Configuration
 @EnableKafka

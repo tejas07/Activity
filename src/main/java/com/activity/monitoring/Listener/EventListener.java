@@ -1,10 +1,10 @@
-package com.sboxnw.monitoring.Listener;
+package com.activity.monitoring.Listener;
 
+import com.activity.monitoring.domain.Event;
+import com.activity.monitoring.domain.NotificationWrapper;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sboxnw.monitoring.dao.EventsDao;
-import com.sboxnw.monitoring.domain.Event;
-import com.sboxnw.monitoring.domain.NotificationWrapper;
+import com.activity.monitoring.dao.EventsDao;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -12,10 +12,10 @@ import org.springframework.kafka.annotation.KafkaListener;
 import java.util.Date;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Tejas Gowda <tejas.gowda@sugarboxnetworks.com>, March 2018.
+ * Written by Tejas Gowda <tejas7111991@gmail.com>, March 2018.
  */
 public class EventListener {
 

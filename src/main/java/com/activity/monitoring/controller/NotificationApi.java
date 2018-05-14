@@ -1,6 +1,6 @@
-package com.sboxnw.monitoring.controller;
+package com.activity.monitoring.controller;
 
-import com.sboxnw.monitoring.domain.Notify;
+import com.activity.monitoring.domain.Notify;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Tejas Gowda <tejas.gowda@sugarboxnetworks.com>, March 2018.
+ * Written by Tejas Gowda <tejas7111991@gmail.com>, March 2018.
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-05-12T12:07:58.556Z")
 @Api(value = "notificationApi", description = "NotificationApi's")

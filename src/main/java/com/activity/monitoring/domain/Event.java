@@ -1,4 +1,4 @@
-package com.sboxnw.monitoring.domain;
+package com.activity.monitoring.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -9,10 +9,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import javax.persistence.Id;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Tejas Gowda <tejas.gowda@sugarboxnetworks.com>, March 2018.
+ * Written by Tejas Gowda <tejas7111991@gmail.com>, March 2018.
  */
 @Data
 @Document(collection = "tEvent")

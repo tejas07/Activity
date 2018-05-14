@@ -1,6 +1,6 @@
-package com.sboxnw.monitoring.exception;
+package com.activity.monitoring.exception;
 
-import com.sboxnw.monitoring.controller.BaseController;
+import com.activity.monitoring.controller.BaseController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Copyright (C) Margo Networks Private Limited - All Rights Reserved
+ * Copyright (C) Tejas Gowda Activity Sample - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  * Written by Kunal Utage <kunal.utage@catseyetech.in>, September 2017.

@@ -1,4 +1,4 @@
-package com.sboxnw.monitoring;
+package com.activity.monitoring;
 
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

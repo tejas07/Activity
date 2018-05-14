@@ -1,7 +1,7 @@
-package com.sboxnw.monitoring.controller;
+package com.activity.monitoring.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sboxnw.monitoring.ApplicationTests;
+import com.activity.monitoring.ApplicationTests;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
