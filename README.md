@@ -9,8 +9,7 @@ Pre-requisite:
 
 Core Concept
 --------------
-Monitoring Microservices are used to consume kafka events from any application 
-below are the event registry key to produce events.
+Monitoring Microservices are used to consume kafka events from any application.
 
 Underlying DB
 -------------
