@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+
+    <springProperty scope="context" name="springAppName" source="MonitoringMicroservices"/>
+    <property name="DEV_HOME" value="/var/log/project"/>​
+    <property name="project" value="monitoring_"/>​
+    <!-- You can override this to have a custom pattern -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} – %msg%n"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>TRACE</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+
+    <!--<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
+        <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+            <!--<level>INFO</level>-->
+            <!--<onMatch>ACCEPT</onMatch>-->
+            <!--<onMismatch>DENY</onMismatch>-->
+        <!--</filter>-->
+        <!--<encoder>-->
+            <!--<pattern>%d{yyyy-MM-dd/HH:mm:ss.SSS} [%thread] %-5level %logger{20}: %msg%n</pattern>-->
+        <!--</encoder>-->
+    <!--</appender>-->
+    <!-- file appender -->
+    <appender name="INFO_FILE" class="ch.qos.logback.core.FileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${DEV_HOME}/${project}info.log</file>
+        <!--<file>${home}/applicationInfo.log</file>
+        /home/sachin/workspace/OTTPartnerService/logconfig/
+        -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd/HH:mm:ss.SSS} [%thread] %-5level %logger{20}: %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="DEBUG_FILE" class="ch.qos.logback.core.FileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!--<file>logconfig/applicationDebug.log</file>-->
+        <file>${DEV_HOME}/${project}debug.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd/HH:mm:ss.SSS} [%thread] %-5level %logger{20}: %msg%n</pattern>
+        </encoder>
+
+    </appender>
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${DEV_HOME}/${project}error.log</file>
+        <!--<file>logconfig/applicationError.log</file>-->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd/HH:mm:ss.SSS} [%thread] %-5level %logger{20}: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root >
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="INFO_FILE" />
+        <appender-ref ref="DEBUG_FILE" />
+        <appender-ref ref="ERROR_FILE" />
+    </root>
+
+</configuration>
